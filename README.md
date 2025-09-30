@@ -7,6 +7,7 @@ Reproduction case for https://github.com/inspect-js/is-generator-function/issues
 Working case when using 1.1.0
 
 ```
+npm install is-generator-function@1.1.0
 node working
 ```
 
@@ -15,5 +16,6 @@ node working
 Broken case when using 1.1.1
 
 ```
+npm install is-generator-function@1.1.1
 node broken
 ```
