@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
       - run: npm install is-generator-function@1.1.0
-      - run: node working
+      - run: node test
 
   broken:
     runs-on: ubuntu-latest
@@ -24,4 +24,4 @@ jobs:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v5
       - run: npm install is-generator-function@1.1.1
-      - run: node broken
+      - run: node test
