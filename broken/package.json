@@ -1,0 +1,15 @@
+{
+  "name": "is-generator-function-issue-45-broken",
+  "version": "1.0.0",
+  "description": "Broken case for issue #45 in is-generator-function",
+  "main": "index.js",
+  "private": false,
+  "dependencies": {
+    "koa": "^2.16.2"
+  },
+  "overrides": {
+    "koa": {
+      "is-generator-function": "1.1.1"
+    }
+  }
+}

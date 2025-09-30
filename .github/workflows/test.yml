@@ -1,0 +1,21 @@
+name: Test
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  working:
+    runs-on: ubuntu-latest
+    steps:
+      - run: node working
+
+  broken:
+    runs-on: ubuntu-latest
+    steps:
+      - run: node broken
